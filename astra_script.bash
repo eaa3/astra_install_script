@@ -11,4 +11,4 @@ rosrun astra_camera create_udev_rules
 echo "###########################################"
 echo "Please reboot now"
 echo "###########################################"
-sudo reboot
+reboot
