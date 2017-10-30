@@ -15,9 +15,10 @@ echo "Please reboot. Do you want to reboot now (y/n)?"
 echo "###########################################"
 answer="n"
 read answer
-if echo "$answer" | grep -iq "^y"; 
+test=`echo $answer | grep "^y"`
+if [ ! -z "$test" ] || [ "$test" == "y" ] 
 then
-    echo "rebooting";
+    echo "rebooting"
     #sudo reboot
 else
     echo "Remember to reboot later."
