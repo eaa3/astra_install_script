@@ -1,3 +1,5 @@
+#!/bin/bash
+
 mkdir -p astra_example_ws/src
 cd astra_example_ws/src
 git clone https://github.com/clearpathrobotics/ros_astra_launch.git --branch upstream
@@ -14,7 +16,7 @@ echo "###########################################"
 answer="n"
 read answer
 if echo "$answer" | grep -iq "^y" ;then
-    echo "rebooting"
+    echo "rebooting";
     #sudo reboot
 else
     echo "Remember to reboot later."
