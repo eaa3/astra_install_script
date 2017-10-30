@@ -9,6 +9,11 @@ source devel/setup.bash
 rosrun astra_camera create_udev_rules
 
 echo "###########################################"
-echo "Please reboot now"
+echo "Please reboot. Do you want to reboot now (y/n)?"
 echo "###########################################"
-reboot
+read answer
+if echo "$answer" | grep -iq "^y" ;then
+     reboot
+else
+    echo "Remember to reboot later."
+fi
