@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 mkdir -p astra_example_ws/src
 cd astra_example_ws/src
